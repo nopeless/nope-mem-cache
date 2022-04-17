@@ -136,6 +136,11 @@ class PriorityQueue<T> {
     return result;
   }
 
+  peek(): T | undefined {
+    if (this.size === 0) return;
+    return this.array[0];
+  }
+
   poll(): T | undefined {
     if (this.size === 0) return;
     const res = this.array[0];
@@ -173,5 +178,5 @@ class PriorityQueue<T> {
   }
 }
 
-export { PriorityQueue };
+export { PriorityQueue, defaultComparator };
 export type { Comparator };
