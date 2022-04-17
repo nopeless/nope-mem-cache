@@ -40,7 +40,6 @@ module.exports = {
         checkForEach: true,
       },
     ],
-    "no-duplicate-imports": `error`,
     "no-promise-executor-return": `error`,
     "require-atomic-updates": `error`,
     camelcase: [
